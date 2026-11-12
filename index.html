@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>LoloBuy spreadsheet | Finds, Sizing &amp; QC Checklist</title>
+<meta name="description" content="Use this LoloBuy spreadsheet guide to browse CAFANS categories, verify product links, compare sizes and QC photos, and plan international shipping.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LoloBuy spreadsheet | Finds, Sizing &amp; QC Checklist">
+<meta property="og:description" content="Browse CAFANS categories and build a shortlist around source links, measurements, QC photos and packed weight.">
+<style>
+:root{color-scheme:light;--paper:#f8f4eb;--ink:#211a2c;--muted:#5d5264;--line:#d8ccdd;--plum:#362342;--lime:#e3edac}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid #8444aa;outline-offset:3px}
+.wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+header{border-bottom:1px solid var(--line)}
+.top{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-weight:850;text-decoration:none}
+.button{display:inline-block;background:var(--lime);color:#23271a;padding:.65rem 1rem;font-weight:750;text-decoration:none;border-radius:.35rem}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;margin-top:1.25rem;background:var(--plum);color:#fff;border-radius:1rem;overflow:hidden}
+.intro{padding:clamp(1.25rem,5vw,3.75rem);align-self:center}
+h1,h2,h3,p,figure{margin:0}
+h1{font-size:clamp(2.65rem,7vw,5.2rem);letter-spacing:-.075em;line-height:.98;overflow-wrap:anywhere}
+h2{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.12;letter-spacing:-.04em;margin-bottom:1rem}
+h3{line-height:1.25;margin-bottom:.5rem}
+p+p{margin-top:.75rem}
+.intro p{max-width:41ch;margin-top:1rem;color:#f2e9f5}
+.hero figure{display:grid;background:#ede9e4;color:var(--ink);grid-template-rows:1fr auto}
+.hero img{width:100%;height:100%;aspect-ratio:5/4;object-fit:contain}
+figcaption{font-size:.86rem;padding:.55rem .8rem;background:#fff}
+section{margin-block:clamp(2rem,5vw,4rem)}
+.categories,.gallery,.guides{display:grid;gap:.65rem}
+.categories{grid-template-columns:repeat(5,minmax(0,1fr))}
+.categories a{display:flex;align-items:center;min-height:54px;padding:.65rem .8rem;border:1px solid var(--line);border-radius:.4rem;background:#fff;text-decoration:none;font-weight:680;overflow-wrap:anywhere}
+.categories a:hover{background:var(--lime)}
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery figure,article{background:white;border:1px solid var(--line);border-radius:.6rem;overflow:hidden}
+.gallery img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#eee9ed}
+.note{margin-top:.65rem;color:var(--muted)}
+.guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+article{padding:1.2rem}
+details{border-top:1px solid var(--line);padding:.75rem 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{font-weight:750;cursor:pointer;padding:.2rem 0}
+details p{max-width:72ch;margin:.45rem 0}
+footer{background:var(--plum);color:white;padding:1.35rem 0}
+@media(max-width:760px){.categories{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero img{aspect-ratio:16/9}}
+@media(max-width:520px){.guides{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"LoloBuy spreadsheet",
+  "inLanguage":"en",
+  "description":"Browse CAFANS categories and compare product links, sizing, QC photos and packed weight.",
+  "mainEntity":{
+    "@type":"FAQPage",
+    "inLanguage":"en",
+    "mainEntity":[
+      {"@type":"Question","name":"What is a LoloBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"It is a product research list that can record seller links, variants, sizing notes and quality-control photos. Use each row as a starting point and confirm the details on the current seller listing."}},
+      {"@type":"Question","name":"Where do the category links go?","acceptedAnswer":{"@type":"Answer","text":"All ten category links open CAFANS category pages. This is an independent shopping guide."}},
+      {"@type":"Question","name":"Which QC photos should I request for sneakers?","acceptedAnswer":{"@type":"Answer","text":"Ask for both shoes together, both heels, both outsoles and the size labels. Request an insole measurement if you need to compare fit with a pair you already own."}},
+      {"@type":"Question","name":"Can QC photos confirm a branded item is authentic?","acceptedAnswer":{"@type":"Answer","text":"QC photos show visible details and condition. To assess authenticity, check the seller’s provenance and documentation or use a qualified authentication service."}},
+      {"@type":"Question","name":"What do I need to compare shipping quotes?","acceptedAnswer":{"@type":"Answer","text":"Use your destination, final packed weight, outer parcel dimensions and the shipping line’s billing rules. Check whether the quote includes any applicable taxes or handling charges."}}
+    ]
+  }
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/qrdim/">
+</head>
+<body>
+<!-- Bing research: 10 first-page organic listings across 9 domains. Two listings belonged to lolobuysheets.com. -->
+<header>
+  <div class="wrap top">
+    <a class="logo" href="https://www.cafans.com">www.cafans.com</a>
+    <a class="button" href="https://www.cafans.com">Browse CAFANS</a>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div class="intro">
+      <h1>LoloBuy spreadsheet</h1>
+      <p>Browse ten CAFANS categories and build a shortlist you can check against seller listings, actual measurements and warehouse photos.</p>
+    </div>
+    <figure>
+      <img src="https://www.tike.gr/files/images/products/media/CW2/CW2288-111/images/CW2288-111.jpg.webp" width="750" height="600" alt="Side profile of a white Nike Air Force 1 ’07 sneaker" loading="eager" fetchpriority="high">
+      <figcaption>Nike Air Force 1 ’07</figcaption>
+    </figure>
+  </div>
+
+  <section aria-labelledby="categories">
+    <h2 id="categories">Browse by category</h2>
+    <nav class="categories" aria-label="CAFANS product categories">
+      <a href="https://cafans.com/category-911-Shoes.html">Shoes</a>
+      <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters</a>
+      <a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts</a>
+      <a href="https://cafans.com/category-914-Jackets.html">Jackets</a>
+      <a href="https://cafans.com/category-915-Pants%2FShorts.html">Pants/Shorts</a>
+      <a href="https://cafans.com/category-916-Headwear.html">Headwear</a>
+      <a href="https://cafans.com/category-917-Sets.html">Sets</a>
+      <a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underwear/underpants</a>
+      <a href="https://cafans.com/category-919-Jersey.html">Jersey</a>
+      <a href="https://cafans.com/category-920-Accessories.html">Accessories</a>
+    </nav>
+  </section>
+
+  <section aria-labelledby="guides">
+    <h2 id="guides">What to check before you order</h2>
+    <div class="guides">
+      <article>
+        <h3>LoloBuy finds and product links</h3>
+        <p>For a Weidian product link, Taobao listing or 1688 product page, record the source item ID and selected variant. Match the seller’s color option, size label and listing photos before adding a row. Date each check so a replaced listing or expired product link is easy to spot later.</p>
+      </article>
+      <article>
+        <h3>LoloBuy sizing guide</h3>
+        <p>For shoes, compare the sneaker insole length in centimeters with a pair you wear. For hoodies and jackets, lay a garment flat and measure chest width, shoulder width and sleeve length. Check the waistband, rise and inseam for pants. For a matching set, confirm that the top and bottoms come in the sizes you need.</p>
+      </article>
+      <article>
+        <h3>LoloBuy QC photo checklist</h3>
+        <p>Compare warehouse QC photos against the exact variant you saved. Look for uneven seams, damaged zippers, loose threads and mismatched shoe labels. For a cap, check the head circumference and closure. For jewelry, request a close-up of the clasp and ask for the bracelet’s inner circumference or the earrings’ drop length.</p>
+      </article>
+      <article>
+        <h3>LoloBuy shipping guide</h3>
+        <p>Keep item weight and packed parcel weight in separate fields. Compare parcel dimensions, volumetric weight, shoebox packaging and any parcel consolidation fees. Before shipping to the US, UK or EU, check destination-specific delivery options and whether the estimate includes import charges or local handling fees.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="references">
+    <h2 id="references">Style references</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://media-assets.grailed.com/prd/listing/temp/2ed23e0513674cb3a5d44518450d0365?auto=format&amp;w=480" width="480" height="600" loading="lazy" decoding="async" alt="Blue Louis Vuitton x Nigo Damier Waves denim trucker jacket">
+        <figcaption>Louis Vuitton x Nigo denim jacket</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/White_Center_0_0_980x980/1776259833/875719_3HBJ3_4000_002_100_0000_Light.jpg" width="980" height="980" loading="lazy" decoding="async" alt="Model wearing a Gucci GG denim baseball cap and matching jacket">
+        <figcaption>Gucci GG denim cap</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.oliverjewellery.ca/cdn/shop/files/Hermes-Palladium-Plated-Black-Enamel-12-MM-Clic-H-Bracelet-w-Box_2353fbce.jpg?v=1744097525&amp;width=480" width="480" height="600" loading="lazy" decoding="async" alt="Hermès Clic H bracelet with black enamel and a silver-tone H clasp">
+        <figcaption>Hermès Clic H bracelet</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/LOOK_F_24_4_LOOK_052_E09?%24lookDefault_GH-GHC%24=&amp;bfc=on&amp;crop=568%2C0%2C1864%2C2000&amp;wid=480&amp;qlt=80" width="480" height="515" loading="lazy" decoding="async" alt="Close-up of Dior Tribales earrings with white resin pearls">
+        <figcaption>Dior Tribales earrings</figcaption>
+      </figure>
+    </div>
+    <p class="note">Editorial reference images. Check the current CAFANS listing for its own photos and product details.</p>
+  </section>
+
+  <section aria-labelledby="faq">
+    <h2 id="faq">Frequently asked questions</h2>
+    <details open>
+      <summary>What is a LoloBuy spreadsheet?</summary>
+      <p>It is a product research list that can record seller links, variants, sizing notes and quality-control photos. Use each row as a starting point and confirm the details on the current seller listing.</p>
+    </details>
+    <details>
+      <summary>Where do the category links go?</summary>
+      <p>All ten category links open CAFANS category pages. This is an independent shopping guide.</p>
+    </details>
+    <details>
+      <summary>Which QC photos should I request for sneakers?</summary>
+      <p>Ask for both shoes together, both heels, both outsoles and the size labels. Request an insole measurement if you need to compare fit with a pair you already own.</p>
+    </details>
+    <details>
+      <summary>Can QC photos confirm a branded item is authentic?</summary>
+      <p>QC photos show visible details and condition. To assess authenticity, check the seller’s provenance and documentation or use a qualified authentication service.</p>
+    </details>
+    <details>
+      <summary>What do I need to compare shipping quotes?</summary>
+      <p>Use your destination, final packed weight, outer parcel dimensions and the shipping line’s billing rules. Check whether the quote includes any applicable taxes or handling charges.</p>
+    </details>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><a class="logo" href="https://www.cafans.com">www.cafans.com</a></div>
+</footer>
+</body>
+</html>
